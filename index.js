@@ -24,7 +24,9 @@ db.connect((err) => {
 });
 
 app.get("/", (req, res) => {
-  res.send(`REST Server listening on port ${port}!`);
+  res.send(
+    `REST Server listening on port ${port}!\nREST Server created by: Muhammad Ridwan Hakim`
+  );
 });
 
 // GET all products
